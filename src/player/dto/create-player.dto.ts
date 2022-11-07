@@ -6,6 +6,8 @@ export class CreatePlayerDto {
 
     Role: string;
 
+    Attributes: object;
+
     Age: number;
 
     Speed: number;
