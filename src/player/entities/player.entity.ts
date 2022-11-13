@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, EntitySchemaOptions, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Player {
@@ -6,5 +6,28 @@ export class Player {
     id: number;
 
     @Column()
-    Name: string;
+    UserId: number;
+
+    @Column()
+    Position: string;
+
+    @Column()
+    Role: string;
+
+    @Column()
+    Age: number;
+
+    @Column()
+    Speed: number;
+
+    @Column()
+    Strength: number;
+
+    @Column()
+    Skills: number;
+
+    @Column()
+    Vison: number;
+
+
 }
