@@ -3,6 +3,8 @@ import { PlayerService } from './player.service';
 import { CreatePlayerDto } from './dto/create-player.dto';
 import { UpdatePlayerDto } from './dto/update-player.dto';
 
+//Player controller defines CRUD operations
+
 @Controller('player')
 export class PlayerController {
   constructor(private readonly playerService: PlayerService) {}
