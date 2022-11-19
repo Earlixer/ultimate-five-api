@@ -5,9 +5,10 @@ import { AppService } from './app.service';
 import { PlayerModule } from './player/player.module';
 import { TeamsModule } from './teams/teams.module';
 import { UserModule } from './user/user.module';
+import config from './utils/configOrm';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), PlayerModule, TeamsModule, UserModule],
+  imports: [PlayerModule, TeamsModule, UserModule],
   controllers: [AppController],
   providers: [AppService],
 })

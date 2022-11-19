@@ -3,7 +3,7 @@
 const config = {
     type: 'sqlite',
     database: 'earldb',
-    entities: ['dist/src/**/*.entity.js'],
+    entities: ['dist/src/**/*.entity.js'],      
     synchronize: false,
     migrations: [
         'dist/src/db/migrations/*.js'

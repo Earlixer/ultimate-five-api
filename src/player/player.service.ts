@@ -2,6 +2,9 @@ import { Injectable } from '@nestjs/common';
 import { CreatePlayerDto } from './dto/create-player.dto';
 import { UpdatePlayerDto } from './dto/update-player.dto';
 
+//Player Service  contains methods associated with controller.
+
+
 @Injectable()
 export class PlayerService {
   create(createPlayerDto: CreatePlayerDto) {
